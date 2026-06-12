@@ -9,13 +9,23 @@ public class HelloWorldController {
 
     @GetMapping("/")
 
-    public  String showHellopage(){
+    public String showHellopage() {
         return "sayhello";
     }
 
 
-@GetMapping("/second")
-    public String showSecondpage(){
+    @GetMapping("/second")
+    public String showSecondpage() {
         return "sayhello2";
-}
+    }
+
+    @GetMapping("/login")
+    public String showLoginpage() {
+        return "login";
+    }
+
+    @GetMapping("/register")
+    public String shoowRegisterpage() {
+        return "registration";
+    }
 }

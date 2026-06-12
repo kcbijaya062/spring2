@@ -3,6 +3,6 @@
 <head>
     <title>First Page</title>
 <head>
-<body> <h1>Hello from another side<h1>
-<body>
+<body> <h1>Hello from another side</h1>
+</body>
 </html>
