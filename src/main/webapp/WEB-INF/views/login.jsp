@@ -13,7 +13,7 @@
 <div class="container">
     ${msg}
     <h2>Login form</h2>
-    <form action="/doLogin" method="post">
+    <form action="/dologin" method="post">
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control"   name="email">

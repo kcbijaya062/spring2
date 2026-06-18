@@ -1,54 +1,38 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8" %>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registration Page</title>
+    <title>Addition Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
+<div class="container">
+    ${message}
+    <h2>Registration form</h2>
+    <form action="registration" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control"   name="empname">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control"  name="empage">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control"   name="empemail">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control"  name="emppass">
+        </div>
 
-<h2>User Registration</h2>
-
-<form action="registerProcess.jsp" method="post">
-
-    Name:
-    <input type="text" name="name" required>
-    <br><br>
-
-    Email:
-    <input type="email" name="email" required>
-    <br><br>
-
-    Username:
-    <input type="text" name="username" required>
-    <br><br>
-
-    Password:
-    <input type="password" name="password" required>
-    <br><br>
-
-    Confirm Password:
-    <input type="password" name="confirmPassword" required>
-    <br><br>
-
-    Gender:
-    <input type="radio" name="gender" value="Male"> Male
-    <input type="radio" name="gender" value="Female"> Female
-    <br><br>
-
-    Country:
-    <select name="country">
-        <option value="USA">USA</option>
-        <option value="Nepal">Nepal</option>
-        <option value="India">India</option>
-    </select>
-
-    <br><br>
-
-    <button type="submit">Register</button>
-
-</form>
-
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
 </body>
 </html>
