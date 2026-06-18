@@ -21,10 +21,7 @@ public class HelloWorldController {
         return "sayhello2";
     }
 
-    @GetMapping("/login")
-    public String showLoginpage() {
-        return "login";
-    }
+
 
     @GetMapping("/register")
     public String shoowRegisterpage() {

@@ -14,7 +14,7 @@ public class LoginController {
         return "login";
     }
     @PostMapping("/dologin")
-    public String dologin(@RequestParam String email , @RequestParam String password, Model model){
+    public String dologin(@RequestParam String email , @RequestParam String pswd, Model model){
         //System.out.println("email:"+ email);
         //System.out.println("password is "+password);
         //model.addAttribute("email",email);
@@ -23,7 +23,7 @@ public class LoginController {
         // let me assueme my email as correct email stored in database with its password test
         String correctEmail = "kecybijaya@gmail.com";
         String correctPassword = "test";
-        if(email.equals(correctEmail)&& password.equals(correctPassword)) {
+        if(email.equals(correctEmail)&& pswd.equals(correctPassword)) {
 
             return "congrats"; //congrats.jsp
         }
